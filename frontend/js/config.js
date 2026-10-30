@@ -1,6 +1,5 @@
-// Backend porti (xohlagan portingizni belgilashingiz mumkin)
-const PORT = 5000;
-const BASE_URL = `http://localhost:${PORT}`;
+// Backend jonli server manzili (Render)
+const BASE_URL = 'https://you-tube-clone-i03q.onrender.com';
 
 // Eski soxta (render / test) token mavjud bo'lsa, tozalaymiz
 if (localStorage.getItem('token') === 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjY5LCJpYXQiOjE3OTAyNTE5MDB9.Ki18J9re7TkgMaiOE5z1qoFV_NXjdpLuhmLHlknw5v8') {

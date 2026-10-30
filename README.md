@@ -41,3 +41,4 @@ npm run dev
 
 ### 2. Frontend:
 - `http://localhost:5000` manziliga kiring yoki `frontend/index.html` faylini Live Server orqali oching.
+

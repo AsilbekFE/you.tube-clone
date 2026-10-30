@@ -207,3 +207,58 @@ input[type="file"] {
     background-color: black;
     color: white;
 }
+
+
+/* ================= RESPONSIVE MEDIA QUERIES (MOBILE) ================= */
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        margin-bottom: 20px;
+    }
+
+    .signup-image {
+        display: none;
+    }
+
+    .admin-wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 350px;
+    }
+
+    .video-item {
+        width: 48%;
+    }
+
+    .video-item:not(:nth-child(2n)) {
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-item {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .wrapper {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .custom-upload {
+        width: 100%;
+    }
+}

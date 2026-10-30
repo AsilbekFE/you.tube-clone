@@ -172,3 +172,30 @@ label:last-child {
     color: #222;
     font-family: poppins, sans-serif;
 }
+
+
+/* ================= RESPONSIVE MEDIA QUERIES (MOBILE) ================= */
+
+@media (max-width: 900px) {
+    .wrapper {
+        width: 90%;
+        padding: 40px 24px;
+        align-items: center;
+    }
+
+    .signup-image {
+        display: none;
+    }
+
+    .site-form {
+        width: 100%;
+    }
+
+    .custom-upload {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}

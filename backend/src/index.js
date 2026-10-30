@@ -7,7 +7,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import router from './router/index.js';
 import { errorHandler } from './middleware/error.middleware.js';
-import pool from './config/db.js';
+import pool, { initDb } from './config/db.js';
 
 dotenv.config();
 
@@ -59,6 +59,7 @@ app.use(router);
 app.use(errorHandler);
 
 // Serverni tinglash
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+    await initDb();
     console.log(`🚀 Server is running http://localhost:${PORT} portida muvaffaqiyatli ishga tushdi!`);
 });
